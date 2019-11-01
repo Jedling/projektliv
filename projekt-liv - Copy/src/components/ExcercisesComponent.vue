@@ -15,11 +15,10 @@
         </p>
       </div>
     </div>
-    <div v-for="(item, index) in excerciseType" :key="index" class="row mb-3 justify-content-center">
-      <div  class="col-12 col-md-6">
+    <div  class="row mb-3 justify-content-center">
+      <div v-for="(item, index) in excerciseType" :key="index"  class="col-12 col-md-6">
         <div class="card">
           <div class="card-header mb-3"> {{ item.Name }} </div>
-          <!-- <p class="card-text">hej</p> -->
           <div class="card-body">
             <div class="videoWrapper">
               <iframe :src="`${item.Src}`" allowfullscreen></iframe>
@@ -53,7 +52,7 @@ private excerciseType: ExcerciseTypeModel[] = excerciseTypeData;
     color: rgb(176, 104, 196);
   }
   .card-header {
-    font-weight: 800;
+    // font-weight: 800;
     color: white;
     background-color: rgb(197, 168, 205);
   }
