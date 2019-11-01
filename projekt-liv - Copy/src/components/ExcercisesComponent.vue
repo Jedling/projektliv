@@ -15,14 +15,14 @@
         </p>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
+    <div v-for="(item, index) in excerciseType" :key="index" class="row mb-3 justify-content-center">
+      <div  class="col-12 col-md-6">
         <div class="card">
-          <div class="card-header mb-3">öVNING</div>
+          <div class="card-header mb-3"> {{ item.Name }} </div>
           <!-- <p class="card-text">hej</p> -->
           <div class="card-body">
             <div class="videoWrapper">
-              <iframe src="//www.youtube.com/embed/9fSde2DD8YQ" allowfullscreen></iframe>
+              <iframe :src="`${item.Src}`" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -33,11 +33,15 @@
 
 <script lang='ts'>
 import { Component, Vue } from "vue-property-decorator";
+import { ExcerciseTypeModel } from "../types/ExcerciseTypeModel";
+import excerciseTypeData from "@/assets/data/ExcerciseEntity";
 
 @Component({
   components: {}
 })
-export default class ExcercisesComponent extends Vue {}
+export default class ExcercisesComponent extends Vue {
+private excerciseType: ExcerciseTypeModel[] = excerciseTypeData;
+}
 </script>
 <style scoped lang="scss">
 .excercises {

@@ -81,83 +81,6 @@
         </div>
       </div>
     </div>
-    <!-- </div> -->
-    <!-- <div class="row mt-4">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-header mb-3">öVNING 2</div>
-          <ul class="list-unstyled">
-            <li class="media mb-2">
-              <img
-                class="mr-3"
-                id="img-styling"
-                src="../assets/media/radio-icon.png"
-                alt="Generic placeholder image"
-              />
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">LJUDINSPELNING</h5>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
-              </div>
-            </li>
-            <li class="media mb-2">
-              <img
-                class="mr-3"
-                id="img-styling"
-                src="../assets/media/reading-icon.jpg"
-                alt="Generic placeholder image"
-              />
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">LÄSNING</h5>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
-              </div>
-            </li>
-            <li class="media mb-2">
-              <img
-              //
-              //klicka här för att starta modalen
-              //
-                @click="showModal()"
-                class="mr-3"
-                id="img-styling"
-                src="../assets/media/movie-icon.jpg"
-                alt="Generic placeholder image"
-              />
-              <div class="media-body">
-                <h5 class="mt-0 mb-1">FILMKLIPP</h5>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
-                scelerisque ante sollicitudin. Cras purus odio, vestibulum in
-                vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
-                nisi vulputate fringilla. Donec lacinia congue felis in
-                faucibus.
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>-->
-    <!-- <transition name="fade">
-      <div v-show="modal" class="modal-filter">
-        <div class="dc-modal scrollbar" id="scrollbar" ref="modal">
-          <div class="modal-body">
-            <div class="embed-responsive embed-responsive-16by9">
-            <div id="player"></div>
-           
-            </div>
-            <button
-              @click="closeModal()"
-              type="button"
-              class="close-btn btn btn-danger"
-              data-dismiss="modal"
-            >STÄNG</button>
-          </div>
-        </div>
-      </div>
-    </transition> -->
   </div>
 </template>
 
@@ -177,55 +100,7 @@ export default class MediaComponent extends Vue {
   private radioTypes: RadioTypeModel[] = radioTypeData;
   private paperTypes: PaperTypeModel[] = paperTypeData;
   private filmTypes: FilmTypeModel[] = filmTypeData;
-  // private modal: boolean = false;
-  // private player: any;
-
-  // created() {
-  //   let tag = document.createElement("script");
-  //   tag.src = "https://www.youtube.com/iframe_api";
-  //   let firstScriptTag = document.getElementsByTagName("script")[0];
-  //   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  // }
-
-  // private showModal() {
-  //   document.documentElement.style.overflow = "hidden";
-  //   this.modal = true;
-  //   this.onYouTubeIframeAPIReady();
-  // }
-  // private closeModal() {
-  //   document.documentElement.style.overflow = "scroll";
-  //   // const modalEl = this.$refs.modal as HTMLDivElement;
-  //   this.player.stopVideo();
-  //   this.modal = false;
-  // }
-  // private onPlayerReady(event) {
-  //   event.target.playVideo();
-  // }
-
-  // private onYouTubeIframeAPIReady() {
-  //   this.player = new YT.Player("player", {
-  //     height: "390",
-  //     width: "640",
-  //     videoId: "M7lc1UVf-VE"
-  //     // events: {
-  //     //   onReady: onPlayerReady,
-  //     // onStateChange: onPlayerStateChange
-  //     // }
-  //   });
-  // }
-
-  // private onPlayerStateChange(event) {
-  //   if (event.data == YT.PlayerState.PLAYING && !done) {
-  //     setTimeout(stopVideo, 6000);
-  //     done = true;
-  //   }
-  // }
-  // private playVideo() {
-  //   this.player.playVideo();
-  // }
-  // private stopVideo() {
-  //   this.player.stopVideo();
-  // }
+ 
 }
 </script>
 <style scoped lang="scss">
@@ -274,51 +149,6 @@ img {
     .radio-btn:hover {
       background-color: rgb(155, 88, 17);
     }
-  }
-  .modal-filter {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  .dc-modal {
-    top: 50% !important;
-    left: 50% !important;
-    float: left;
-    transform: translate(-50%, -50%);
-    position: fixed !important;
-    width: 70% !important;
-    z-index: 9999 !important;
-    // background-color: #e92547;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
-    color: #fff;
-    border-radius: 2px;
-    @media (max-width: 768px) {
-      width: 90% !important;
-    }
-    .modal-body {
-      background-color: black;
-    }
-    .button {
-      cursor: pointer;
-      background-color: red;
-      border: 1px solid dimgray;
-    }
-    .btn {
-      margin-top: 1rem;
-      width: 100%;
-    }
-  }
-  .fade-enter-active,
-  .fade-leave-active {
-    transition: opacity 0.5s;
-  }
-  .fade-enter,
-  .fade-leave-to {
-    opacity: 0;
   }
 }
 </style>
