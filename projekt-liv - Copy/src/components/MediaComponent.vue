@@ -119,6 +119,9 @@
             </li>
             <li class="media mb-2">
               <img
+              //
+              //klicka här för att starta modalen
+              //
                 @click="showModal()"
                 class="mr-3"
                 id="img-styling"
