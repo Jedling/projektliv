@@ -8,13 +8,22 @@
           </div>
         </router-link>
       </div>
-      <div class="col-md-10 col-12 mx-auto">
-        <div class="card border-0 mb-3">
+      <div class="col-md-10 col-12 mt-3 mx-auto">
+        <p class="intro-text">
+          <strong>LIV instruktionsfilmer</strong>
+          syftar till att påminna dig om hur övningarna fungerar samt till nya ledare som vill lära sig övningarna. Dessa är inte övningsvideos som ska göras i realtid. För detta ändamål hänvisar vi till audio övningarna längre upp.
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="card">
+          <div class="card-header mb-3">öVNING</div>
+          <!-- <p class="card-text">hej</p> -->
           <div class="card-body">
-            <h5 class="card-title">Övningar är under utveckling</h5>
-            <p class="card-text">
-              <!-- En övningar är snart här -->
-            </p>
+            <div class="videoWrapper">
+              <iframe src="//www.youtube.com/embed/9fSde2DD8YQ" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -26,8 +35,7 @@
 import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-  components: {
-  }
+  components: {}
 })
 export default class ExcercisesComponent extends Vue {}
 </script>
@@ -38,13 +46,33 @@ export default class ExcercisesComponent extends Vue {}
     font-size: 50px;
   }
   .home-btn:hover {
-    color: rgb(176, 104, 196)
+    color: rgb(176, 104, 196);
   }
   .card-header {
     font-weight: 800;
     color: white;
     background-color: rgb(197, 168, 205);
   }
+  .card-img {
+    @media only screen and (max-width: 768px) {
+      width: 70%;
+    }
+    width: 50%;
+    border-radius: calc(0.25rem - 1px);
+    padding: 16px;
+  }
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
-
 </style>

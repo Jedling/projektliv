@@ -177,42 +177,42 @@ export default class MediaComponent extends Vue {
   private radioTypes: RadioTypeModel[] = radioTypeData;
   private paperTypes: PaperTypeModel[] = paperTypeData;
   private filmTypes: FilmTypeModel[] = filmTypeData;
-  private modal: boolean = false;
-  private player: any;
+  // private modal: boolean = false;
+  // private player: any;
 
-  created() {
-    let tag = document.createElement("script");
-    tag.src = "https://www.youtube.com/iframe_api";
-    let firstScriptTag = document.getElementsByTagName("script")[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-  }
+  // created() {
+  //   let tag = document.createElement("script");
+  //   tag.src = "https://www.youtube.com/iframe_api";
+  //   let firstScriptTag = document.getElementsByTagName("script")[0];
+  //   firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  // }
 
-  private showModal() {
-    document.documentElement.style.overflow = "hidden";
-    this.modal = true;
-    this.onYouTubeIframeAPIReady();
-  }
-  private closeModal() {
-    document.documentElement.style.overflow = "scroll";
-    // const modalEl = this.$refs.modal as HTMLDivElement;
-    this.player.stopVideo();
-    this.modal = false;
-  }
-  private onPlayerReady(event) {
-    event.target.playVideo();
-  }
+  // private showModal() {
+  //   document.documentElement.style.overflow = "hidden";
+  //   this.modal = true;
+  //   this.onYouTubeIframeAPIReady();
+  // }
+  // private closeModal() {
+  //   document.documentElement.style.overflow = "scroll";
+  //   // const modalEl = this.$refs.modal as HTMLDivElement;
+  //   this.player.stopVideo();
+  //   this.modal = false;
+  // }
+  // private onPlayerReady(event) {
+  //   event.target.playVideo();
+  // }
 
-  private onYouTubeIframeAPIReady() {
-    this.player = new YT.Player("player", {
-      height: "390",
-      width: "640",
-      videoId: "M7lc1UVf-VE"
-      // events: {
-      //   onReady: onPlayerReady,
-      // onStateChange: onPlayerStateChange
-      // }
-    });
-  }
+  // private onYouTubeIframeAPIReady() {
+  //   this.player = new YT.Player("player", {
+  //     height: "390",
+  //     width: "640",
+  //     videoId: "M7lc1UVf-VE"
+  //     // events: {
+  //     //   onReady: onPlayerReady,
+  //     // onStateChange: onPlayerStateChange
+  //     // }
+  //   });
+  // }
 
   // private onPlayerStateChange(event) {
   //   if (event.data == YT.PlayerState.PLAYING && !done) {
@@ -220,12 +220,12 @@ export default class MediaComponent extends Vue {
   //     done = true;
   //   }
   // }
-  private playVideo() {
-    this.player.playVideo();
-  }
-  private stopVideo() {
-    this.player.stopVideo();
-  }
+  // private playVideo() {
+  //   this.player.playVideo();
+  // }
+  // private stopVideo() {
+  //   this.player.stopVideo();
+  // }
 }
 </script>
 <style scoped lang="scss">

@@ -1,6 +1,6 @@
 <template>
   <div class="events mt-4 container">
-    <h2 class="header text-center">ÖVNINGAR</h2>
+    <h2 class="header text-center mb-4">ÖVNINGAR</h2>
     <ExcercisesComponent />
   </div>
 </template>
@@ -26,7 +26,6 @@ export default class Exercises extends Vue {}
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
   @media only screen and (max-width: 568px) {
     font-size: 2em;
-    // margin-bottom: 10px;
   }
 }
 </style>

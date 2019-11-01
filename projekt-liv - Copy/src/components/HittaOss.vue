@@ -1,7 +1,7 @@
 <template>
   <div class="hitta-oss">
     <div class="container">
-      <div class="row mt-5">
+      <div class="row mt-4">
         <div class="col-1">
           <router-link to="/">
             <div class="home-btn">
@@ -12,7 +12,6 @@
         <div class="col-md-10 col-12 mb-4 mx-auto">
           <!-- <div class="card border-0">
             <div class="card-body"> -->
-          <h5 class="card-title">Här hittar du rätt</h5>
           <p class="card-text">
             Kartor Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Neque saepe alias eos rem ipsa corrupti suscipit sed, assumenda nam,
