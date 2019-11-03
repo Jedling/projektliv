@@ -1,7 +1,7 @@
 <template>
   <div class="partners">
     <div class="container">
-      <div class="row mt-5">
+      <div class="row mt-4">
         <div class="col-1">
           <router-link to="/">
             <div class="home-btn">
