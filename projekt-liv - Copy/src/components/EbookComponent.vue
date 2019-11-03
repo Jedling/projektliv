@@ -25,7 +25,7 @@
             <figure class="rotate-left">
               <img
                 class="ebook-img"
-                src="../assets/ebook/bokomslag.jpg"
+                src="../assets/ebook/bok.png"
                 alt="Bokomslag till med texten Lugnt inre välmående."
               />
             </figure>
@@ -87,8 +87,8 @@ export default class EbookComponent extends Vue {}
         // float: right;
       }
       width: 100%;
-      padding: 10px 10px 10px 10px;
-      border: 1px solid #bfbfbf;
+      // padding: 10px 10px 10px 10px;
+      // border: 1px solid #bfbfbf;
       background-color: white;
       box-shadow: 10px 10px 5px #aaaaaa;
     }

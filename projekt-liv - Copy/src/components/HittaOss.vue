@@ -10,22 +10,18 @@
           </router-link>
         </div>
         <div class="col-md-10 col-12 mb-4 mx-auto">
-          <!-- <div class="card border-0">
-            <div class="card-body"> -->
           <p class="card-text">
-            Kartor Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            <!-- Kartor Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Neque saepe alias eos rem ipsa corrupti suscipit sed, assumenda nam,
             consequuntur beatae nihil facere qui tempora odio. Asperiores esse
-            mollitia dolorum?
+            mollitia dolorum? -->
           </p>
-          <!-- </div>
-          </div> -->
         </div>
       </div>
       <div class="row"></div>
       <div class="row mb-5 card-frame justify-content-center">
         <div class="col-sm-4">
-          <div class="card mt-2">
+          <div class="card mt-2 mb-2">
             <div class="card-body text-center">
               <h2 class="card-title">KFUM</h2>
               <ul class="list-group list-group-flush">
@@ -47,12 +43,12 @@
                   <p>211 55 Malmö</p>
                 </li>
               </ul>
-              <h4>Ansvariga partners</h4>
+              <!-- <h4>Ansvariga partners</h4>
               <ul class="list-group text-center list-group-flush">
                 <li class="list-group-item">
                   KFUM
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -74,7 +70,7 @@
       </div>
       <div class="row mb-5 card-frame justify-content-center">
         <div class="col-sm-4">
-          <div class="card mt-2">
+          <div class="card mt-2 mb-2">
             <div class="card-body text-center">
               <h2 class="card-title">Projekt LIV</h2>
               <ul class="list-group list-group-flush">
@@ -96,12 +92,12 @@
                   <p>211 55 Malmö</p>
                 </li>
               </ul>
-              <h4>Ansvariga partners</h4>
+              <!-- <h4>Ansvariga partners</h4>
               <ul class="list-group text-center list-group-flush">
                 <li class="list-group-item">
                   KFUM & Sensus
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -123,7 +119,7 @@
       </div>
       <div class="row mb-5 card-frame justify-content-center">
         <div class="col-sm-4">
-          <div class="card mt-2">
+          <div class="card mt-2 mb-2">
             <div class="card-body text-center">
               <h2 class="card-title">Annegården</h2>
               <ul class="list-group list-group-flush">
@@ -145,12 +141,12 @@
                   <p>226 49 Lund</p>
                 </li>
               </ul>
-              <h4>Ansvariga partners</h4>
+              <!-- <h4>Ansvariga partners</h4>
               <ul class="list-group text-center list-group-flush">
                 <li class="list-group-item">
                   KFUM, Strokeförbundet & Sensus
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -172,7 +168,7 @@
       </div>
       <div class="row mb-5 card-frame justify-content-center">
         <div class="col-sm-4">
-          <div class="card mt-2">
+          <div class="card mt-2 mb-2">
             <div class="card-body text-center">
               <h2 class="card-title">Helsingborg</h2>
               <ul class="list-group list-group-flush">
@@ -194,12 +190,12 @@
                   <p>254 53 Helsingborg</p>
                 </li>
               </ul>
-              <h4>Ansvariga partners</h4>
+              <!-- <h4>Ansvariga partners</h4>
               <ul class="list-group text-center list-group-flush">
                 <li class="list-group-item">
                   KFUM, Sensus Strokeförbundet & Mindfulness
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -221,7 +217,7 @@
       </div>
       <div class="row mb-5 card-frame justify-content-center">
         <div class="col-sm-4">
-          <div class="card mt-2">
+          <div class="card mt-2 mb-2">
             <div class="card-body text-center">
               <h2 class="card-title">Seniorernas Hus</h2>
               <ul class="list-group list-group-flush">
@@ -243,12 +239,12 @@
                   <p>271 50 Ystad</p>
                 </li>
               </ul>
-              <h4>Ansvariga partners</h4>
+              <!-- <h4>Ansvariga partners</h4>
               <ul class="list-group text-center list-group-flush">
                 <li class="list-group-item">
                   KFUM, Sensus Strokeförbundet & Mindfulness
                 </li>
-              </ul>
+              </ul> -->
             </div>
           </div>
         </div>
@@ -294,6 +290,13 @@ export default class HittaOss extends Vue {
   }
   .card-frame {
     box-shadow: 1px 1px 10px 1px #888888;
+  }
+  .card-title {
+     @media only screen and (max-width: 768px) {
+        font-size: 1.5rem;
+        font-weight: 700;
+        // float: right;
+      }
   }
   .home-btn {
     color: rgb(235, 187, 78);

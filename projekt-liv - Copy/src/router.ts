@@ -24,13 +24,13 @@ export default new Router({
       component: Home,
     },
     {
-      path: '/findus',
-      name: 'FindUs',
+      path: '/hitta-oss',
+      name: 'hitta-oss',
       component: FindUs,
     },
     {
       path: '/partners',
-      name: 'Partners',
+      name: 'partners',
       component: Partners,
     },
     {
@@ -39,13 +39,13 @@ export default new Router({
       component: Workshop,
     },
     {
-      path: '/events',
-      name: 'Events',
+      path: '/evenemang',
+      name: 'evenemang',
       component: Events,
     },
     {
-      path: '/schedule',
-      name: 'Schedule',
+      path: '/schema-aktiviteter',
+      name: 'schema-aktiviteter',
       component: Schedule,
     },
     {
@@ -55,27 +55,27 @@ export default new Router({
     },
     {
       path: '/media',
-      name: 'Media',
+      name: 'media',
       component: Media,
     },
     {
-      path: '/application',
-      name: 'Application',
+      path: '/appen',
+      name: 'appen',
       component: Application,
     },
     {
-      path: '/aboutus',
-      name: 'AboutUs',
+      path: '/om-projekt-liv',
+      name: 'om-projekt-liv',
       component: AboutUs,
     },
     {
-      path: '/ebook',
-      name: 'Ebook',
+      path: '/e-boken',
+      name: 'e-boken',
       component: Ebook,
     },
     {
-      path: '/excercises',
-      name: 'Excercises',
+      path: '/övningar',
+      name: 'övningar',
       component: Excercises,
     },
     // {

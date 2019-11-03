@@ -15,8 +15,8 @@
         </p>
       </div>
     </div>
-    <div  class="row mb-3 justify-content-center">
-      <div v-for="(item, index) in excerciseType" :key="index"  class="col-12 col-md-6">
+    <div  class="row">
+      <div v-for="(item, index) in excerciseType" :key="index"  class="col-12 col-md-6 mb-3">
         <div class="card">
           <div class="card-header mb-3"> {{ item.Name }} </div>
           <div class="card-body">
@@ -25,6 +25,7 @@
             </div>
           </div>
         </div>
+      <!-- <hr> -->
       </div>
     </div>
   </div>

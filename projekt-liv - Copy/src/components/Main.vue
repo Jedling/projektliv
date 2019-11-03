@@ -4,14 +4,14 @@
       <div class="row justify-content-center mx-auto">
         <div class="row mt-3">
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="AboutUs">
+            <router-link class="glyphicon glyphicon-list" to="om-projekt-liv">
               <button type="button" class="btn background4 btn-circle btn-xl">
                 OM PROJEKT LIV
               </button></router-link
             >
           </div>
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="Schedule">
+            <router-link class="glyphicon glyphicon-list" to="schema-aktiviteter">
               <button type="button" class="btn background btn-circle btn-xl">
                 SCHEMAN /<br> AKTIVITETER
               </button></router-link
@@ -19,7 +19,7 @@
           </div>
           <div class="col-4 col-md-4">
             <!-- <i class="glyphicon glyphicon-ok">Schema</i> -->
-            <router-link class="glyphicon glyphicon-list" to="FindUs">
+            <router-link class="glyphicon glyphicon-list" to="hitta-oss">
               <button type="button" class="btn background2 btn-circle btn-xl">
                 HITTA OSS
               </button></router-link
@@ -28,7 +28,7 @@
         </div>
         <div class="row mt-3">
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="Ebook">
+            <router-link class="glyphicon glyphicon-list" to="e-boken">
               <button type="button" class="btn background3 btn-circle btn-xl">
                 <!-- <router-link class="glyphicon glyphicon-list" to="Partners" -->
                 E-BOK
@@ -36,14 +36,14 @@
             >
           </div>
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="Excercises">
+            <router-link class="glyphicon glyphicon-list" to="övningar">
               <button type="button" class="btn background5 btn-circle btn-xl">
                 ÖVNINGAR
               </button></router-link
             >
           </div>
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="Application">
+            <router-link class="glyphicon glyphicon-list" to="appen">
               <button type="button" class="btn background6 btn-circle btn-xl">
                 APP
               </button></router-link
@@ -52,21 +52,21 @@
         </div>
         <div class="row mt-3">
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="Partners">
+            <router-link class="glyphicon glyphicon-list" to="partners">
               <button type="button" class="btn background7 btn-circle btn-xl">
                 PARTNERS
               </button></router-link
             >
           </div>
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="Events">
+            <router-link class="glyphicon glyphicon-list" to="evenemang">
               <button type="button" class="btn background8 btn-circle btn-xl">
                 EVENEMANG
               </button></router-link
             >
           </div>
           <div class="col-4 col-md-4">
-            <router-link class="glyphicon glyphicon-list" to="Media">
+            <router-link class="glyphicon glyphicon-list" to="media">
               <button type="button" class="btn background9 btn-circle btn-xl">
                 MEDIA
               </button></router-link

@@ -11,10 +11,10 @@
         </div>
         <div class="col-md-10 col-12 mb-4 mx-auto">
           <p class="intro-text">
-            Text om partners Lorem ipsum, dolor sit amet consectetur adipisicing
+            <!-- Text om partners Lorem ipsum, dolor sit amet consectetur adipisicing
             elit. Rerum libero, temporibus ut repellat itaque, corrupti aperiam
             consequuntur enim commodi tempora nemo, rem illum quisquam
-            praesentium ex excepturi pariatur veniam reiciendis!
+            praesentium ex excepturi pariatur veniam reiciendis! -->
           </p>
         </div>
       </div>

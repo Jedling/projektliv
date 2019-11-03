@@ -9,7 +9,7 @@
         </router-link>
       </div>
       <div class="col-md-8 col-12 mb-4 mx-auto">
-        <p class="intro-text">Mediasektionen är under utveckling</p>
+        <!-- <p class="intro-text">Mediasektionen är under utveckling</p> -->
       </div>
     </div>
     <div class="card mb-3">

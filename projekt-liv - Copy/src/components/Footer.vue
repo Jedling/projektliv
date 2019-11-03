@@ -31,7 +31,7 @@
             </a>
           </div>
           <div class="col-4 col-sm-3">
-            <a href="" target="_blank">
+            <a href="https://www.youtube.com/channel/UCZO648Bd6F4_FZt0Jjq9thQ" target="_blank">
               <i class="fab icon fa-youtube"></i>
             </a>
           </div>
