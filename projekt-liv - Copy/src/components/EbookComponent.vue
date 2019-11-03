@@ -32,7 +32,7 @@
           </div>
           <div class="col-12 col-md-6">
             <p class="intro-text">
-              <strong>Vill du beställa den LIV-boken - vänd dig till Strokeföreningen Malmö, epost info@strokemalmo.se, telefon xxxx, som distribuerar boken.</strong>
+              <strong>Vill du beställa den LIV-boken - vänd dig till Strokeföreningen Malmö, epost info@strokemalmo.se, som distribuerar boken.</strong>
             </p>
             <br />
             <p>
@@ -58,14 +58,6 @@ export default class EbookComponent extends Vue {}
 </script>
 <style scoped lang="scss">
 .ebook-component {
-  // font-size: 3em;
-  // color: white;
-  // background-color: rgb(235, 187, 78);
-  // line-height: 1.2;
-  // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
-  // @media only screen and (max-width: 568px) {
-  //   font-size: 2em;
-  // }
   .home-btn {
     font-size: 50px;
     color: rgb(85, 110, 169);
@@ -84,11 +76,8 @@ export default class EbookComponent extends Vue {}
     .ebook-img {
       @media only screen and (min-width: 768px) {
         width: 80%;
-        // float: right;
       }
       width: 100%;
-      // padding: 10px 10px 10px 10px;
-      // border: 1px solid #bfbfbf;
       background-color: white;
       box-shadow: 10px 10px 5px #aaaaaa;
     }

@@ -2,6 +2,7 @@ interface IFindUsTypeModel {
     Id: number;
     Name: string;
     Street: string,
+    ZipCode: string;
     Phone: string;
     Email: string
     City: string;
@@ -12,6 +13,7 @@ interface IFindUsTypeModel {
     public Id: number;
     public Name: string;
     public Street: string;
+    public ZipCode: string;
     public Phone: string;
     public Email: string;
     public City: string;
@@ -23,6 +25,7 @@ interface IFindUsTypeModel {
       id: number = 0,
       name: string = '',
       street: string = '',
+      zipCode: string = '',
       phone: string = '',
       email: string = '',
       city: string = '',
@@ -31,6 +34,7 @@ interface IFindUsTypeModel {
       this.Id = id;
       this.Name = name;
       this.Street = street;
+      this.ZipCode = zipCode;
       this.Phone = phone;
       this.Email = email;
       this.City = city;
